@@ -1,0 +1,85 @@
+.works {
+    text-align: center;
+
+    &__wrapper {
+        padding: 50px 0 60px;
+        background: url('../img/works-bg.jpg') no-repeat center / cover;
+    }
+
+    &__icon {
+        margin-left: 14px;
+        margin-bottom: 23px;
+    }
+    
+    &__title {
+        margin-left: 16px;
+        margin-bottom: 59px;
+        font-family: $font-ProximaNova;
+        color: $color-white;
+        font-weight: 400;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    &__slider {
+        text-align: -webkit-center;
+    }
+
+    &__item {
+        margin-left: 10px;
+    }
+
+    &__btn {
+        margin-top: 105px;
+        margin-left: 24px;
+    }
+
+    &__button {
+        border-color: $color-white;
+        color: $color-white;
+        font-style: italic;
+    }
+
+    &__arrowright {
+        position: absolute;
+        font-size: 72px;
+        right: -64px;
+        bottom: 237px;
+        color: $color-white;
+    }
+
+    &__arrowleft {
+        position: absolute;
+        font-size: 72px;
+        left: -51px;
+        top: 239px;
+        z-index: 999;
+        color: $color-white;
+    }
+}
+
+.slick-dots {
+    margin-left: 11px;
+    bottom: -66px;
+
+    & li {
+        margin-right: 10px;
+    }
+
+    &>li.slick-active button {
+        background-color: $color-white;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.slick-dots li button:before {
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+

@@ -1,0 +1,128 @@
+.services {
+    display: flex;
+    margin-left: 10px;
+
+    &__left {
+        width: 65.66%;
+    }
+
+    &__item {
+        padding: 95px 30px 138px;
+        text-align: center;
+        
+        a {
+            display: block;
+            color: $color-main;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: $color-main;
+            }
+        }
+    }
+
+    &__itemgrey {
+        background-color: $color-lightgrey;
+    }
+
+    &__icon {
+        margin-bottom: 13px;
+    }
+
+    &__right {
+        padding-top: 115px;
+        text-align: center;
+        background: url('../img/services-img.jpg') no-repeat center / cover;
+        
+        a {
+            display: block;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: $color-white;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        font-size: $font-small;
+        font-style: italic;
+        
+    }
+
+    &__right {
+        width: 35.33%;
+    }
+
+    &__righticon {
+        margin-left: 13px;
+        margin-bottom: 18px;
+    }
+
+    &__righttitle {
+        margin-bottom: 106px;
+        font-size: 36px;
+        font-family: $font-ProximaNova;
+        font-weight: 300;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    &__rightdesc {
+        max-width: 350px;
+        margin-left: 33px;
+        font-style: italic;
+        font-size: $font-small;
+        color: $color-white;
+    }
+
+    &__author {
+        font-size: $font-small;
+        color: $color-white;
+    }
+}
+
+@media all and (max-width: 1140px) {
+    .services {
+
+        &__rightdesc {
+            max-width: 200px;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .services {
+        display: block;
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+
+        }
+
+        &__title {
+            font-size: $font-main;
+        }
+
+        &__rightdesc {
+            max-width: 100%;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__righttitle {
+            margin-bottom: 40px;
+        }
+    }
+}

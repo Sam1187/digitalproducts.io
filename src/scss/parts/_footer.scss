@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 23px 75px 46px;
+
+    &__wrapper {
+        background-color: $color-blue;
+    }
+
+    &__copyrights {
+        color: $color-white;
+        font-size: $font-small;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .footer {
+        display: block;
+
+        &__copyrights {
+            margin-bottom: 20px;
+        }
+    }
+}

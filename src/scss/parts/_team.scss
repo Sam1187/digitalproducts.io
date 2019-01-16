@@ -1,0 +1,97 @@
+.team {
+    padding-top: 54px;
+    text-align: center;
+
+    &__icon {
+        margin-left: 10px;
+        margin-bottom: 19px;
+    }
+
+    &__title {
+        margin-bottom: 51px;
+        margin-left: 12px;
+        font-family: $font-ProximaNova;
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__slider {
+        margin-left: 38px;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        width: 350px;
+        height: 575px;
+        position: relative;
+    }
+
+    &__ava {
+        position: absolute;
+        top: 0;
+        left: 48px;
+        z-index: 2;
+    }
+
+    &__desc {
+        position: absolute;
+        top: 134px;
+        left: 0;
+        z-index: 1;
+        width: 350px;
+        padding-top: 156px;
+        background-color: $color-white;
+    }
+
+    &__name {
+        margin-bottom: 21px;
+        font-family: $font-ProximaNova;
+        font-weight: 700;
+        font-size: $font-big;
+        color: $color-blue;
+        text-transform: uppercase;
+    }
+
+    &__profession {
+        margin-bottom: 46px;
+        font-style: italic;
+        font-size: $font-big;
+    }
+
+    &__link a {
+        display: block;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+        
+    }
+
+    &__contact {
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+        padding: 19px 31px;
+        background-color: $color-blue;
+
+        &--four {
+            padding: 19px 79px;
+        }
+    }
+
+    &__arrowright {
+        position: absolute;
+        font-size: 68px;
+        right: -64px;
+        bottom: 226px;
+    }
+
+    &__arrowleft {
+        position: absolute;
+        font-size: 68px;
+        left: -90px;
+        top: 256px;
+        z-index: 999;
+    }
+}

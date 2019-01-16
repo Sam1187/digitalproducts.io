@@ -1,0 +1,11 @@
+.button {
+    padding: 11px 51px;
+    border: 1px solid $color-main;
+    background-color: inherit;
+
+    &:hover {
+        background-color: $color-main;
+        color: $color-white;
+        border-color: $color-white;
+    }
+}
