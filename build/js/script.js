@@ -87,7 +87,6 @@ $(document).ready(function(){
     var navList = $('.js-nav-list');
 
     navBtn.on('click', function() {
-        console.log(1);
         navList.toggleClass('is-active');
         $('body').toggleClass('no-scroll');
     });
